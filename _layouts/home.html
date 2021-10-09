@@ -13,7 +13,7 @@ layout: default
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>{{ site.title }}</h1>
+            <h3>{{ site.title }}</h3>
             {% if site.description %}
             <span class="subheading">{{ site.description }}</span>
             {% endif %}
@@ -28,38 +28,69 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
 
         {{ content }}
+          
+        <div style="float:center">
+            <center><b>GDSC VIETNAM FAMILY:</b></center>
+            <center><a href= "https://www.facebook.com/dscinvietnam"target="_blank"> Google Developer Student Clubs Vietnam </a> <br><br></center>
+          </div>
+        
+          <div style="width: 50%; float:left">
+          <b>Đại học Bách Khoa ĐHQG TP.HCM </b><br>
+          <a href= "https://www.facebook.com/dsc.hcmut/"target="_blank"> Developer Student Clubs - HCMUT </a> <br><br><br>
+          <b>Đại học FPT TP.HCM</b> <br>
+          <a href= "https://www.facebook.com/fptudsc/"target="_blank"> Developer Student Community -  FPT University HCMC </a><br><br>
+          <b>Đại học Khoa học Tự nhiên ĐHQG TP.HCM</b><br>
+          <a href= "https://www.facebook.com/dsc.hcmus/"target="_blank"> Google Developer Student Clubs - HCMUS </a><br><br>
+          <b>Đại học Quốc tế ĐHQG TP.HCM</b><br>
+          <a href= "https://www.facebook.com/dsc.hcmiu/"target="_blank"> Google Developer Student Clubs - HCMIU </a><br><br>
+          <b>Đại học Công nghệ Thông tin ĐHQG TP.HCM</b><br>
+          <a href= "https://www.facebook.com/gdsc.uit/"target="_blank"> Google Developer Student Club - UIT </a><br><br><br>
+          <b>Đại học Ngoại Thương TP.HCM</b><br>
+          <a href= "https://www.facebook.com/gdsc.ftu2/"target="_blank"> Google Developer Student Clubs - Foreign Trade University </a><br><br>
+          <b>Đại học Sư phạm Kỹ thuật TP.HCM</b><br>
+          <a href= "https://www.facebook.com/gdsc.hcmute/"target="_blank"> Google Developer Student Clubs - HCM UTE </a><br><br>
+          <b>Đại học Công nghiệp TP.HCM</b><br>
+          <a href= "https://www.facebook.com/iuh.gdsc/"target="_blank"> Google Developer Student Clubs - Industrial University of Ho Chi Minh City </a><br><br>
+          <b>Học viện Kỹ thuật Mật mã (Hà Nội)</b><br>
+          <a href= "https://www.facebook.com/dsc.kma"target="_blank"> Developer Student Club - Academy of Cryptography Techniques </a><br><br><br>
+          <b>Đại học FPT Đà Nẵng</b><br>
+          <a href= "https://www.facebook.com/dsc.fptudn"target="_blank"> Google Developer Student Clubs - <br> FPT University Da Nang </a><br><br>
+          <b>Đại học Duy Tân (TP Đà Nẵng)</b><br>
+          <a href= "https://www.facebook.com/gdsc.duytan"target="_blank"> Google Developer Student Clubs - <br> Duy Tan University </a><br><br><br>
+          <b>Đại học Fulbright</b><br>
+          <a href= "https://www.facebook.com/gdsc.fuv"target="_blank"> Google Developer Student Clubs - <br> Fulbright University </a><br><br>
+        
 
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
+         </div>
+         
+         <div style="width: 50%; float:right">
+          <b>Đại học Sài Gòn</b> <br>
+          <a href= "https://www.facebook.com/sgudsc"target="_blank"> Google Developer Student Clubs - Saigon University </a><br><br>
+          <b>Đại học Công nghệ Sài Gòn</b><br>
+          <a href= ""target="_blank"> Google Developer Student Clubs - Saigon Technology UniversityL </a><br><br>
+          <b>Đại học Tôn Đức Thắng (TP Hồ Chí Minh)</b><br>
+          <a href= "https://www.facebook.com/gdsc.tdtu/"target="_blank"> Developer Student Club - Ton Duc Thang University </a><br><br>
+          <b>Đại học Hoa Sen</b><br>
+          <a href= "https://www.facebook.com/gdsc.hsu/"target="_blank"> Google Developer Student Clubs - Hoa Sen University </a><br><br>
+          <b>Đại học Bách Khoa Hà Nội</b><br>
+          <a href= "https://www.facebook.com/dsc.hust.2020/"target="_blank"> Google Developer Student Clubs - Hanoi University of Science and Technology </a><br><br>
+          <b>Đại học Hà Nội</b><br>
+          <a href= "https://www.facebook.com/hanugdsc/"target="_blank"> Developer Student Clubs - HANU </a><br><br><br>
+          <b>Đại học Quốc gia Hà Nội</b><br>
+          <a href= "https://www.facebook.com/dscvnu/"target="_blank"> Developer Student Club VNU </a><br><br><br>
+          <b>Đại học Mỏ - Địa chất (Hà Nội)</b><br>
+          <a href= "https://www.facebook.com/gdsc.humg/"target="_blank"> Google Developer Student Clubs - HUMG </a><br><br><br>
+          <b>Đại học Greenwich (Hà Nội, Đà Nẵng, Cần Thơ)</b><br>
+          <a href= "https://www.facebook.com/dsc.uog"target="_blank"> Google Developer Student Club - University of Greenwich Vietnam </a><br><br>
+          <b>Đại học Bách Khoa Đà Nẵng</b><br>
+          <a href= "https://www.facebook.com/gdsc.dut"target="_blank"> Developer Student Club - Danang University of Science and Technology </a><br><br>
+          <b>Viện nghiên cứu và đào tạo Việt - Anh, Đại học Đà Nẵng</b><br>
+          <a href= "https://www.facebook.com/dscvnuk/"target="_blank"> Google Developer Student Club - VNUK</a><br><br>
+          <b>Đại học Giao Thông Vận Tải</b><br>
+          <a href="https://www.facebook.com/gdsc.ut" target="=_blank"> Google Deverloper Student Club - Transport</a>
+          
+         </div>
+        
 
       </div>
     </div>
